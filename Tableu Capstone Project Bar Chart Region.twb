@@ -1,0 +1,878 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20252.25.1003.1601                               -->
+<workbook original-version='18.1' source-build='2025.2.4 (20252.25.1003.1601)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='capstone project (mysql)' inline='true' name='federated.1t23xe51dxl9qc1f506nb0shrswl' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1me083t01hmdo5119dy3t0ephjq6'>
+            <connection class='mysql' dbname='mysql' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+      </connection>
+      <aliases enabled='yes' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph />
+    </datasource>
+    <datasource caption='capstone project (project)' inline='true' name='federated.1qhgdmi0dbpcty184o5r51dl6xoh' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1jxaxjx051g2yn1doz27b0gzoafv'>
+            <connection class='mysql' dbname='project' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.1jxaxjx051g2yn1doz27b0gzoafv' name='capstone project' table='[capstone project]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Category]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Product Category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit Price</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Unit Price]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Unit Price</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Sales</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Total Sales]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Total Sales</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cost</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Total Cost]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Total Cost</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_56ED9C2CBED04B728AF24FA306480EC6]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Order ID]' role='dimension' type='ordinal' />
+      <column caption='capstone project' datatype='table' name='[__tableau_internal_object_id__].[capstone project_56ED9C2CBED04B728AF24FA306480EC6]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='capstone project' id='capstone project_56ED9C2CBED04B728AF24FA306480EC6'>
+            <properties context=''>
+              <relation connection='mysql.1jxaxjx051g2yn1doz27b0gzoafv' name='capstone project' table='[capstone project]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='capstone project (project) (2)' inline='true' name='federated.0p0ukf318m37e015r548b1og0nr4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.08b66le1tb3up015vucdk0z8acll'>
+            <connection class='mysql' dbname='project' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.08b66le1tb3up015vucdk0z8acll' name='capstone project' table='[capstone project]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Category]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Product Category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit Price</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Unit Price]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Unit Price</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Sales</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Total Sales]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Total Sales</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cost</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Total Cost]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Total Cost</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Order ID]' role='dimension' type='ordinal' />
+      <column caption='capstone project' datatype='table' name='[__tableau_internal_object_id__].[capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='capstone project' id='capstone project_6D9EE28EF3AE4607A647C2EBFC75AEAA'>
+            <properties context=''>
+              <relation connection='mysql.08b66le1tb3up015vucdk0z8acll' name='capstone project' table='[capstone project]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='capstone project (project) (3)' inline='true' name='federated.0xp83c61riex4z13tn10c0kzk2g0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='localhost' name='mysql.1aoeauv1sm686d1gb4sy118gq86r'>
+            <connection class='mysql' dbname='project' odbc-native-protocol='' one-time-sql='' port='3306' server='localhost' source-charset='' username='root' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.1aoeauv1sm686d1gb4sy118gq86r' name='capstone project' table='[capstone project]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Order ID</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Order ID]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Order ID</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Order Date</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Order Date]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Order Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Customer Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Customer Name]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Customer Name</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Category</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Category]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Product Category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Product Name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Product Name]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Product Name</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='296' flag='3' name='LROOT_S1' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Quantity</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Quantity]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Quantity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unit Price</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Unit Price]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Unit Price</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Sales</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Total Sales]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Total Sales</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total Cost</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Total Cost]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Total Cost</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Profit</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[Profit]</local-name>
+            <parent-name>[capstone project]</parent-name>
+            <remote-alias>Profit</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <object-id>[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Order ID]' role='dimension' type='ordinal' />
+      <column caption='capstone project' datatype='table' name='[__tableau_internal_object_id__].[capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='capstone project' id='capstone project_00B81AE794A04AA4AE4FC4520F2AAE4E'>
+            <properties context=''>
+              <relation connection='mysql.1aoeauv1sm686d1gb4sy118gq86r' name='capstone project' table='[capstone project]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='capstone project (project)' name='federated.1qhgdmi0dbpcty184o5r51dl6xoh' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1qhgdmi0dbpcty184o5r51dl6xoh'>
+            <column datatype='string' name='[Region]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Total Sales]' role='measure' type='quantitative' />
+            <column-instance column='[Region]' derivation='None' name='[none:Region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Total Sales]' derivation='Sum' name='[sum:Total Sales:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.1qhgdmi0dbpcty184o5r51dl6xoh].[none:Region:nk]</rows>
+        <cols>[federated.1qhgdmi0dbpcty184o5r51dl6xoh].[sum:Total Sales:qk]</cols>
+      </table>
+      <simple-id uuid='{0F58BE49-78BD-429F-ADBF-294D639E5527}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='137'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1qhgdmi0dbpcty184o5r51dl6xoh].[none:Customer Name:nk]</field>
+            <field>[federated.1qhgdmi0dbpcty184o5r51dl6xoh].[none:Order ID:ok]</field>
+            <field>[federated.1qhgdmi0dbpcty184o5r51dl6xoh].[none:Product Category:nk]</field>
+            <field>[federated.1qhgdmi0dbpcty184o5r51dl6xoh].[none:Product Name:nk]</field>
+            <field>[federated.1qhgdmi0dbpcty184o5r51dl6xoh].[none:Region:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D797750C-34BF-497E-AEE9-DF54B027797C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='175' name='Sheet 1' width='192'>
+      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
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>

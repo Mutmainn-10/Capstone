@@ -1,0 +1,11 @@
+Order ID,Order Date,Customer Name,Region,Product Category,Product Name,Quantity,Unit Price,Total Sales,Total Cost,Profit
+8001,3/14/2025,Olivia Carter,East,Video Games,Play Station 5,2,500,1000,750,250
+8002,6/19/2025,Ethan Brooks,North,Clothing,Baggy Sweatpant,4,20,80,55,25
+8003,12/23/2025,Sophia Martinez,East,Electronics,Phone,1,900,900,875,25
+8004,8/13/2025,Liam Thompson,South,Kitchen Supplies,Coffee Maker,2,100,200,190,10
+8005,4/10/2025,Ava Johnson,West,Books,Excel Book,5,40,200,176,24
+8006,1/17/2025,Noah Wiliiams,North,Sport Equipment,Soccer Ball,10,15,150,145,5
+8007,3/20/2025,Isabella Clark,North,Electronics,Sony Headphone,3,200,600,575,25
+8008,4/16/2025,Mason Davis,East,Utilities,LED Light Bulb,8,50,400,392,8
+8009,9/26/2025,Mia Robinson,South,Car Parts,Engine Oil,1,450,450,438,12
+8010,6/17/2025,Jamees Lewis,West,Pet Supplies,Bird Cage,2,70,140,136,4
